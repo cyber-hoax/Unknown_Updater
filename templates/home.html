@@ -92,10 +92,7 @@ img {vertical-align: middle;}
 <body>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false"> 
   <div class="carousel-inner ">
-    <!-- <div class="carousel-item active">
-      <img src="{%static '/unknown/1.jpg'%}" class="d-block w-100" alt="...">
-    </div> -->
-    
+  
      
     {% for hist in hists %}
     <div class="carousel-item mySlides ">
@@ -143,26 +140,7 @@ img {vertical-align: middle;}
    <input type="submit" id="save" class= "btn  btn-danger buttons "  value="Submit" name="submit">
     </div>
   </form>
-  <!-- <div class="horizontal-scroll-wrapper rectangles" >
-
- 
-  {% for  hist  in hists %}
   
-  
- 
-  
-  <div class="img_holder" onclick="currentSlide({{count}})">
-		<img src="{%static '/unknown/'%}{{hist}}" style="width:100%">
-  </div> 
-
-  
- 
-  {% endfor %}
-  
-  
-
-</div>
- -->
 
 
 <script>

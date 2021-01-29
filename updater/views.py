@@ -46,47 +46,8 @@ def index(request ):
 
 
 
-def delet_user(request):
-    if request.method == 'POST' :
-        files = request.POST["img"]
-        os.remove(settings.BASE_DIR+"/updater/unknown/"+str(files))
-        print(files)
-    print("file deleted")
-
-
-    
-    return render(request , 'home.html', {'hists':hists , 'names' : names})
-
-
-
-
-# def delet_user(request):
-#     if request.method == 'POST' :
-#         files = request.POST["img"]
-#         os.remove(settings.BASE_DIR+"/updater/unknown/"+str(files))
-#         print(files)
-#     print("file deleted")
-
-
-    return redirect(index , request)
 
 
 
 
 
-
-# def load_images_from_folder(folder):
-#     images = []
-#     for filename in os.listdir(folder):
-#         img = cv2.imread(os.path.join(folder,filename))
-#         if img is not None:
-#             images.append(img)
-#     return images
-# def load_images_from_folder(folder):
-#     images = []
-#     for filename in os.listdir(folder):
-#         img = cv2.imread(os.path.join(folder,filename))
-#         if img is not None:
-#             images.append(img)
-#     return images
-# folder="directory/folder path"
